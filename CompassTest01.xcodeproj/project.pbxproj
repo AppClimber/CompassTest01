@@ -14,6 +14,8 @@
 		CA2DB02E208233530026D203 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2DB02C208233530026D203 /* LaunchScreen.storyboard */; };
 		CA2DB039208233540026D203 /* CompassTest01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB038208233540026D203 /* CompassTest01Tests.swift */; };
 		CA2DB044208233540026D203 /* CompassTest01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB043208233540026D203 /* CompassTest01UITests.swift */; };
+		CA2DB05320823A710026D203 /* TopSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2DB05220823A710026D203 /* TopSetting.storyboard */; };
+		CA2DB05520823C620026D203 /* TopSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB05420823C620026D203 /* TopSettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CA2DB03F208233540026D203 /* CompassTest01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompassTest01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2DB043208233540026D203 /* CompassTest01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassTest01UITests.swift; sourceTree = "<group>"; };
 		CA2DB045208233540026D203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA2DB05220823A710026D203 /* TopSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopSetting.storyboard; sourceTree = "<group>"; };
+		CA2DB05420823C620026D203 /* TopSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				CA2DB025208233530026D203 /* ViewController.swift */,
 				CA2DB02A208233530026D203 /* Assets.xcassets */,
 				CA2DB02F208233530026D203 /* Info.plist */,
+				CA2DB05420823C620026D203 /* TopSettingViewController.swift */,
 			);
 			path = CompassTest01;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			children = (
 				CA2DB02C208233530026D203 /* LaunchScreen.storyboard */,
 				CA2DB027208233530026D203 /* Main.storyboard */,
+				CA2DB05220823A710026D203 /* TopSetting.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA2DB02E208233530026D203 /* LaunchScreen.storyboard in Resources */,
+				CA2DB05320823A710026D203 /* TopSetting.storyboard in Resources */,
 				CA2DB02B208233530026D203 /* Assets.xcassets in Resources */,
 				CA2DB029208233530026D203 /* Main.storyboard in Resources */,
 			);
@@ -269,6 +276,7 @@
 			files = (
 				CA2DB026208233530026D203 /* ViewController.swift in Sources */,
 				CA2DB024208233530026D203 /* AppDelegate.swift in Sources */,
+				CA2DB05520823C620026D203 /* TopSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
