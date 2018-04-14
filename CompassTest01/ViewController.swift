@@ -20,6 +20,21 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func settingButtonPushed(_ sender: UIBarButtonItem) {
+        
+        print("Setting button pushed.")
+        
+        let vc = TopSettingViewController()
+        
+        if let nc = self.navigationController {
+            nc.pushViewController(vc, animated: true)
+        }
+        else {
+            print("No navigationController.")
+        }
+        
+        //self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
