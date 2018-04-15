@@ -13,6 +13,10 @@ class TopSettingViewController: UIViewController {
     override func viewDidLoad() {
         print(#file, "viewDidLoad")
         super.viewDidLoad()
+
+        // NavigationControllerではない
+        // NavigationItemはオプショナルではない
+        self.navigationItem.title = "Top Setting"
     }
     
     override func didReceiveMemoryWarning() {
