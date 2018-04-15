@@ -17,6 +17,7 @@
 		CA2DB05320823A710026D203 /* TopSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2DB05220823A710026D203 /* TopSetting.storyboard */; };
 		CA2DB05520823C620026D203 /* TopSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB05420823C620026D203 /* TopSettingViewController.swift */; };
 		CA2DB057208379830026D203 /* ModalScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2DB056208379820026D203 /* ModalScreen.storyboard */; };
+		CA2DB05920837CF10026D203 /* ModalScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB05820837CF10026D203 /* ModalScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CA2DB05220823A710026D203 /* TopSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopSetting.storyboard; sourceTree = "<group>"; };
 		CA2DB05420823C620026D203 /* TopSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSettingViewController.swift; sourceTree = "<group>"; };
 		CA2DB056208379820026D203 /* ModalScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModalScreen.storyboard; sourceTree = "<group>"; };
+		CA2DB05820837CF10026D203 /* ModalScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				CA2DB02A208233530026D203 /* Assets.xcassets */,
 				CA2DB02F208233530026D203 /* Info.plist */,
 				CA2DB05420823C620026D203 /* TopSettingViewController.swift */,
+				CA2DB05820837CF10026D203 /* ModalScreenViewController.swift */,
 			);
 			path = CompassTest01;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			files = (
 				CA2DB026208233530026D203 /* ViewController.swift in Sources */,
 				CA2DB024208233530026D203 /* AppDelegate.swift in Sources */,
+				CA2DB05920837CF10026D203 /* ModalScreenViewController.swift in Sources */,
 				CA2DB05520823C620026D203 /* TopSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
