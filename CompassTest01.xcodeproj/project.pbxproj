@@ -16,6 +16,7 @@
 		CA2DB044208233540026D203 /* CompassTest01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB043208233540026D203 /* CompassTest01UITests.swift */; };
 		CA2DB05320823A710026D203 /* TopSetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2DB05220823A710026D203 /* TopSetting.storyboard */; };
 		CA2DB05520823C620026D203 /* TopSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB05420823C620026D203 /* TopSettingViewController.swift */; };
+		CA2DB057208379830026D203 /* ModalScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2DB056208379820026D203 /* ModalScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		CA2DB045208233540026D203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA2DB05220823A710026D203 /* TopSetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopSetting.storyboard; sourceTree = "<group>"; };
 		CA2DB05420823C620026D203 /* TopSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSettingViewController.swift; sourceTree = "<group>"; };
+		CA2DB056208379820026D203 /* ModalScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModalScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				CA2DB02C208233530026D203 /* LaunchScreen.storyboard */,
 				CA2DB027208233530026D203 /* Main.storyboard */,
 				CA2DB05220823A710026D203 /* TopSetting.storyboard */,
+				CA2DB056208379820026D203 /* ModalScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA2DB02E208233530026D203 /* LaunchScreen.storyboard in Resources */,
+				CA2DB057208379830026D203 /* ModalScreen.storyboard in Resources */,
 				CA2DB05320823A710026D203 /* TopSetting.storyboard in Resources */,
 				CA2DB02B208233530026D203 /* Assets.xcassets in Resources */,
 				CA2DB029208233530026D203 /* Main.storyboard in Resources */,

@@ -44,5 +44,12 @@ class ViewController: UIViewController {
          */
     }
     
+    @IBAction func touchUpShowModalViewButton(_ sender: Any) {
+        print(#file, #function)
+        
+        let sb = UIStoryboard(name: "ModalScreen", bundle: Bundle.main)
+        let vc = sb.instantiateViewController(withIdentifier: "ModalScreen")
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 
