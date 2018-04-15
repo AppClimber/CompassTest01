@@ -24,16 +24,24 @@ class ViewController: UIViewController {
         
         print("Setting button pushed.")
         
-        let vc = TopSettingViewController()
+        let storyboard = UIStoryboard(name: "TopSetting", bundle: Bundle.main)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "TopSetting")
+        self.navigationController?.pushViewController(viewController, animated: true)
         
-        if let nc = self.navigationController {
-            nc.pushViewController(vc, animated: true)
-        }
-        else {
-            print("No navigationController.")
-        }
+        /*
+         let vc = TopSettingViewController()
+         if let nc = self.navigationController {
+         nc.pushViewController(vc, animated: true)
+         }
+         else {
+         print("No navigationController.")
+         }
+        */
         
-        //self.navigationController?.pushViewController(vc, animated: true)
+        /*
+         let vc = TopSettingViewController()
+         self.navigationController?.pushViewController(vc, animated: true)
+         */
     }
     
 }

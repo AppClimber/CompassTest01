@@ -13,7 +13,7 @@
         <!--Top Setting View Controller-->
         <scene sceneID="o6i-cr-NEx">
             <objects>
-                <viewController id="siF-hD-3rD" customClass="TopSettingViewController" customModule="CompassTest01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopSetting" useStoryboardIdentifierAsRestorationIdentifier="YES" id="siF-hD-3rD" customClass="TopSettingViewController" customModule="CompassTest01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zn6-tE-Rqe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,6 +25,13 @@
                                     <navigationItem title="Top Setting" id="mB9-a8-1zh"/>
                                 </items>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZU-yC-alS">
+                                <rect key="frame" x="143" y="323" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="hdw-JE-DJr"/>
