@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AD4EBF52085F2DD00E39F86 /* Compass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD4EBF42085F2DD00E39F86 /* Compass.framework */; };
 		CA2DB024208233530026D203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB023208233530026D203 /* AppDelegate.swift */; };
 		CA2DB026208233530026D203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB025208233530026D203 /* ViewController.swift */; };
 		CA2DB029208233530026D203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2DB027208233530026D203 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AD4EBF42085F2DD00E39F86 /* Compass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Compass.framework; path = Carthage/Build/iOS/Compass.framework; sourceTree = "<group>"; };
 		CA2DB020208233530026D203 /* CompassTest01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompassTest01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2DB023208233530026D203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA2DB025208233530026D203 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD4EBF52085F2DD00E39F86 /* Compass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AD4EBF32085F2DD00E39F86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AD4EBF42085F2DD00E39F86 /* Compass.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA2DB017208233530026D203 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +100,7 @@
 				CA2DB037208233540026D203 /* CompassTest01Tests */,
 				CA2DB042208233540026D203 /* CompassTest01UITests */,
 				CA2DB021208233530026D203 /* Products */,
+				0AD4EBF32085F2DD00E39F86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +168,7 @@
 				CA2DB01D208233530026D203 /* Frameworks */,
 				CA2DB01E208233530026D203 /* Resources */,
 				0AD4EBF22085E23B00E39F86 /* ShellScript */,
+				0AD4EBF62085F30500E39F86 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -290,6 +303,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		0AD4EBF62085F30500E39F86 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Compass.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -469,6 +496,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C937UM4PA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CompassTest01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.personal.CompassTest01;
@@ -484,6 +515,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2C937UM4PA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CompassTest01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.personal.CompassTest01;
