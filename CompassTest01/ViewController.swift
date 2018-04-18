@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Compass
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -24,19 +26,17 @@ class ViewController: UIViewController {
         
         print("Setting button pushed.")
         
-        let storyboard = UIStoryboard(name: "TopSetting", bundle: Bundle.main)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "TopSetting")
-        self.navigationController?.pushViewController(viewController, animated: true)
+        do {
+           try Navigator.navigate(urn: "TopSettingScreen")
+        } catch {
+            print("Error. Route not found.")
+        }
         
         /*
-         let vc = TopSettingViewController()
-         if let nc = self.navigationController {
-         nc.pushViewController(vc, animated: true)
-         }
-         else {
-         print("No navigationController.")
-         }
-        */
+         let storyboard = UIStoryboard(name: "TopSetting", bundle: Bundle.main)
+         let viewController = storyboard.instantiateViewController(withIdentifier: "TopSetting")
+         self.navigationController?.pushViewController(viewController, animated: true)
+         */
         
         /*
          let vc = TopSettingViewController()
@@ -47,8 +47,12 @@ class ViewController: UIViewController {
     @IBAction func touchUpShowModalViewButton(_ sender: Any) {
         print(#file, #function)
         
-        let sb = UIStoryboard(name: "ModalScreen", bundle: Bundle.main)
-        let vc = sb.instantiateViewController(withIdentifier: "ModalScreen")
-        self.present(vc, animated: true, completion: nil)
+        /*
+         let sb = UIStoryboard(name: "ModalScreen", bundle: Bundle.main)
+         let vc = sb.instantiateViewController(withIdentifier: "ModalScreen")
+         self.present(vc, animated: true, completion: nil)
+         */
+        
+        try? Navigator.navigate(urn: "ModalScreen")
     }
 }

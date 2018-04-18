@@ -30,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
+        
+        setupRouting()
 
         return true
     }
@@ -62,11 +64,13 @@ extension AppDelegate {
     
     func setupRouting() {
         
+        print(#file, #function)
+        
         Navigator.scheme = "CompassTest01"
         
         screenRouter.routes = [
-            "TopSettingScreen" : TopSettingScreenRoute(),
-            "ModalScreen" : ModalScreenRoute()
+            "TopSettingScreen": TopSettingScreenRoute(),
+            "ModalScreen": ModalScreenRoute()
         ]
         
         Navigator.routes = Array(screenRouter.routes.keys)
