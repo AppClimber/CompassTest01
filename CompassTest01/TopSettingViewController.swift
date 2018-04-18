@@ -23,5 +23,4 @@ class TopSettingViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-
 }

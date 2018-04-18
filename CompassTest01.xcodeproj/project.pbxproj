@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3848A02086C9F30091112B /* Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38489F2086C9F30091112B /* Routers.swift */; };
 		0AD4EBF52085F2DD00E39F86 /* Compass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD4EBF42085F2DD00E39F86 /* Compass.framework */; };
 		CA2DB024208233530026D203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB023208233530026D203 /* AppDelegate.swift */; };
 		CA2DB026208233530026D203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB025208233530026D203 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A38489F2086C9F30091112B /* Routers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routers.swift; sourceTree = "<group>"; };
 		0AD4EBF42085F2DD00E39F86 /* Compass.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Compass.framework; path = Carthage/Build/iOS/Compass.framework; sourceTree = "<group>"; };
 		CA2DB020208233530026D203 /* CompassTest01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompassTest01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA2DB023208233530026D203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				CA2DB02F208233530026D203 /* Info.plist */,
 				CA2DB05420823C620026D203 /* TopSettingViewController.swift */,
 				CA2DB05820837CF10026D203 /* ModalScreenViewController.swift */,
+				0A38489F2086C9F30091112B /* Routers.swift */,
 			);
 			path = CompassTest01;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA2DB026208233530026D203 /* ViewController.swift in Sources */,
+				0A3848A02086C9F30091112B /* Routers.swift in Sources */,
 				CA2DB024208233530026D203 /* AppDelegate.swift in Sources */,
 				CA2DB05920837CF10026D203 /* ModalScreenViewController.swift in Sources */,
 				CA2DB05520823C620026D203 /* TopSettingViewController.swift in Sources */,

@@ -15,10 +15,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    let screenRouter = Router()
+    var screenRouter = Router()
+    
+    var navigationController: UINavigationController?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "TopScreen")
+        
+        navigationController = UINavigationController(rootViewController: vc)
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+
         return true
     }
 
@@ -44,4 +56,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+}
+
+extension AppDelegate {
+    
+    func setupRouting() {
+        
+        Navigator.scheme = "CompassTest01"
+        
+        screenRouter.routes = [
+            "TopSettingScreen" : TopSettingScreenRoute(),
+            "ModalScreen" : ModalScreenRoute()
+        ]
+        
+        Navigator.routes = Array(screenRouter.routes.keys)
+
+        /*
+        Navigator.handle = { [weak self] location in
+            
+            self?.screenRouter.navigate(to: location,
+                                        from: (self?.navigationController?.topViewController)!)
+        }
+ */
+        
+        Navigator.handle = { [weak self] location in
+            
+            // Navigate
+            self?.screenRouter.navigate(to: location, from: (self?.navigationController?.topViewController)!)
+        }
+
+    }
 }
