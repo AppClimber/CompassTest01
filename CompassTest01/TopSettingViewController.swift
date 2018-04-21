@@ -16,7 +16,8 @@ class TopSettingViewController: UIViewController {
 
         // NavigationControllerではない
         // NavigationItemはオプショナルではない
-        self.navigationItem.title = "Top Setting"
+        // ナビゲーションバーのタイトルはstoryboardで設定したため，コメントアウト
+        // self.navigationItem.title = "Top Setting"
     }
     
     override func didReceiveMemoryWarning() {

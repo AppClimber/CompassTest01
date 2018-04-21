@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Top Setting View Controller-->
+        <!--Top Setting-->
         <scene sceneID="o6i-cr-NEx">
             <objects>
                 <viewController storyboardIdentifier="TopSetting" useStoryboardIdentifierAsRestorationIdentifier="YES" id="siF-hD-3rD" customClass="TopSettingViewController" customModule="CompassTest01" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,7 +20,7 @@
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="hdw-JE-DJr"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ENn-7Y-911"/>
+                    <navigationItem key="navigationItem" title="Top Setting" id="ENn-7Y-911"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4c-O0-q3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
