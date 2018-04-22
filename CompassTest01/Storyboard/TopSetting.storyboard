@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Top Setting-->
+        <!--Top Setting 01-->
         <scene sceneID="o6i-cr-NEx">
             <objects>
-                <viewController storyboardIdentifier="TopSetting" useStoryboardIdentifierAsRestorationIdentifier="YES" id="siF-hD-3rD" customClass="TopSettingViewController" customModule="CompassTest01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopSetting01" useStoryboardIdentifierAsRestorationIdentifier="YES" id="siF-hD-3rD" customClass="TopSettingViewController" customModule="CompassTest01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zn6-tE-Rqe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hdw-JE-DJr"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Top Setting" id="ENn-7Y-911"/>
+                    <navigationItem key="navigationItem" title="Top Setting 01" id="ENn-7Y-911">
+                        <barButtonItem key="rightBarButtonItem" title="Setting2" id="GzS-h9-8MG">
+                            <connections>
+                                <action selector="settingButtonPushed:" destination="siF-hD-3rD" id="M48-cc-2NP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4c-O0-q3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

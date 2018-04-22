@@ -10,17 +10,41 @@ import UIKit
 
 import Compass
 
-struct TopSettingScreenRoute: Routable {
+struct TopScreenRoute: Routable {
     
     func navigate(to location: Location, from currentController: CurrentController) throws {
-        let sb = UIStoryboard(name: "TopSetting", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "TopSetting")
+        // StoryBoardの *.storyboard ファイルの名前
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        // ViewControllerのIDは *.storyboard で書いている Storyboard ID
+        let vc = sb.instantiateViewController(withIdentifier: "TopScreen")
         
         currentController.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
-struct ModalScreenRoute: Routable {
+struct TopSetting01Route: Routable {
+    
+    func navigate(to location: Location, from currentController: CurrentController) throws {
+        // StoryBoardの *.storyboard ファイルの名前
+        let sb = UIStoryboard(name: "TopSetting", bundle: nil)
+        // ViewControllerのIDは *.storyboard で書いている Storyboard ID
+        let vc = sb.instantiateViewController(withIdentifier: "TopSetting01")
+        
+        currentController.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+struct TopSetting02Route: Routable {
+    
+    func navigate(to location: Location, from currentController: CurrentController) throws {
+        let sb = UIStoryboard(name: "TopSetting2", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "TopSetting02")
+        
+        currentController.navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+struct Modal01Route: Routable {
     
     func navigate(to location: Location, from currentController: CurrentController) throws {
         let sb = UIStoryboard(name: "ModalScreen", bundle: nil)

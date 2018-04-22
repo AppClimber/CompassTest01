@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         print("Setting button pushed.")
         
         do {
-           try Navigator.navigate(urn: "TopSettingScreen")
+           try Navigator.navigate(urn: "TopSetting01Route")
         } catch {
             print("Error. Route not found.")
         }
@@ -53,6 +53,11 @@ class ViewController: UIViewController {
          self.present(vc, animated: true, completion: nil)
          */
         
-        try? Navigator.navigate(urn: "ModalScreen")
+        // try? Navigator.navigate(urn: "Modal01Route")
+        do {
+            try Navigator.navigate(urn: "Modal01Route")
+        } catch {
+            print("Error. Route not found.")
+        }
     }
 }

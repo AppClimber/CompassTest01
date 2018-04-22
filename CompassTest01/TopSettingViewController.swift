@@ -8,6 +8,8 @@
 
 import UIKit
 
+import Compass
+
 class TopSettingViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -18,6 +20,17 @@ class TopSettingViewController: UIViewController {
         // NavigationItemはオプショナルではない
         // ナビゲーションバーのタイトルはstoryboardで設定したため，コメントアウト
         // self.navigationItem.title = "Top Setting"
+    }
+    
+    @IBAction func settingButtonPushed(_ sender: Any) {
+        print("Setting button pushed.")
+        
+        do {
+            try Navigator.navigate(urn: "TopSetting02Route")
+        } catch {
+            print("Error. Route not found.")
+        }
+
     }
     
     override func didReceiveMemoryWarning() {

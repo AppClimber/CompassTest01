@@ -69,8 +69,10 @@ extension AppDelegate {
         Navigator.scheme = "CompassTest01"
         
         screenRouter.routes = [
-            "TopSettingScreen": TopSettingScreenRoute(),
-            "ModalScreen": ModalScreenRoute()
+            "TopScreenRoute" : TopScreenRoute(),
+            "TopSetting01Route": TopSetting01Route(),
+            "TopSetting02Route": TopSetting02Route(),
+            "Modal01Route": Modal01Route()
         ]
         
         Navigator.routes = Array(screenRouter.routes.keys)

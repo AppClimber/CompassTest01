@@ -20,6 +20,8 @@
 		CA2DB05520823C620026D203 /* TopSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB05420823C620026D203 /* TopSettingViewController.swift */; };
 		CA2DB057208379830026D203 /* ModalScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2DB056208379820026D203 /* ModalScreen.storyboard */; };
 		CA2DB05920837CF10026D203 /* ModalScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB05820837CF10026D203 /* ModalScreenViewController.swift */; };
+		CA2DB05B208CA38C0026D203 /* TopSetting2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA2DB05A208CA38C0026D203 /* TopSetting2.storyboard */; };
+		CA2DB05D208CA9870026D203 /* TopSetting2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2DB05C208CA9870026D203 /* TopSetting2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		CA2DB05420823C620026D203 /* TopSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSettingViewController.swift; sourceTree = "<group>"; };
 		CA2DB056208379820026D203 /* ModalScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ModalScreen.storyboard; sourceTree = "<group>"; };
 		CA2DB05820837CF10026D203 /* ModalScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalScreenViewController.swift; sourceTree = "<group>"; };
+		CA2DB05A208CA38C0026D203 /* TopSetting2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopSetting2.storyboard; sourceTree = "<group>"; };
+		CA2DB05C208CA9870026D203 /* TopSetting2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSetting2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 				CA2DB02A208233530026D203 /* Assets.xcassets */,
 				CA2DB02F208233530026D203 /* Info.plist */,
 				CA2DB05420823C620026D203 /* TopSettingViewController.swift */,
+				CA2DB05C208CA9870026D203 /* TopSetting2ViewController.swift */,
 				CA2DB05820837CF10026D203 /* ModalScreenViewController.swift */,
 				0A38489F2086C9F30091112B /* Routers.swift */,
 			);
@@ -155,6 +160,7 @@
 				CA2DB02C208233530026D203 /* LaunchScreen.storyboard */,
 				CA2DB027208233530026D203 /* Main.storyboard */,
 				CA2DB05220823A710026D203 /* TopSetting.storyboard */,
+				CA2DB05A208CA38C0026D203 /* TopSetting2.storyboard */,
 				CA2DB056208379820026D203 /* ModalScreen.storyboard */,
 			);
 			path = Storyboard;
@@ -269,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2DB05B208CA38C0026D203 /* TopSetting2.storyboard in Resources */,
 				CA2DB02E208233530026D203 /* LaunchScreen.storyboard in Resources */,
 				CA2DB057208379830026D203 /* ModalScreen.storyboard in Resources */,
 				CA2DB05320823A710026D203 /* TopSetting.storyboard in Resources */,
@@ -332,6 +339,7 @@
 				0A3848A02086C9F30091112B /* Routers.swift in Sources */,
 				CA2DB024208233530026D203 /* AppDelegate.swift in Sources */,
 				CA2DB05920837CF10026D203 /* ModalScreenViewController.swift in Sources */,
+				CA2DB05D208CA9870026D203 /* TopSetting2ViewController.swift in Sources */,
 				CA2DB05520823C620026D203 /* TopSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
