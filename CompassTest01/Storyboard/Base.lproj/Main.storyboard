@@ -18,20 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6D-Yy-vFV">
-                                <rect key="frame" x="111" y="318" width="153" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6D-Yy-vFV">
+                                <rect key="frame" x="127" y="318" width="121" height="30"/>
                                 <state key="normal" title="Show Modal View"/>
                                 <connections>
                                     <action selector="touchUpShowModalViewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VCH-mO-yJS"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGh-vd-JvJ">
+                                <rect key="frame" x="129.5" y="94" width="116" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="K6D-Yy-vFV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hd1-vQ-jEg"/>
+                            <constraint firstItem="KGh-vd-JvJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="joU-H5-Ca9"/>
+                            <constraint firstItem="K6D-Yy-vFV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pRU-th-85j"/>
+                            <constraint firstItem="KGh-vd-JvJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zlz-CU-jvt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Top Screen" id="QVJ-hH-KJo">
-                        <barButtonItem key="rightBarButtonItem" title="Setting" id="j82-zq-NWt">
+                        <barButtonItem key="rightBarButtonItem" title="Setting1" id="j82-zq-NWt">
                             <connections>
                                 <action selector="settingButtonPushed:" destination="BYZ-38-t0r" id="bfa-Lw-sFQ"/>
                             </connections>

@@ -17,14 +17,26 @@
                     <view key="view" contentMode="scaleToFill" id="zn6-tE-Rqe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Setting 01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBI-gq-PTE">
+                                <rect key="frame" x="113" y="88" width="149" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eBI-gq-PTE" firstAttribute="top" secondItem="hdw-JE-DJr" secondAttribute="top" constant="24" id="9HF-tB-ca8"/>
+                            <constraint firstItem="eBI-gq-PTE" firstAttribute="centerX" secondItem="zn6-tE-Rqe" secondAttribute="centerX" id="yQV-bn-IPf"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hdw-JE-DJr"/>
                     </view>
                     <navigationItem key="navigationItem" title="Top Setting" id="ENn-7Y-911"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W4c-O0-q3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1559" y="47"/>
+            <point key="canvasLocation" x="1557.5999999999999" y="46.326836581709152"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fgd-je-PY6">
